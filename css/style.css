@@ -29,6 +29,7 @@
 }
 
 body {
+    min-height: 100vh;
     font-family: 'JetBrains Mono', monospace;
     margin: 0px;
     padding: 0px;
