@@ -3,6 +3,7 @@
     --background-secondary: #353535;
     --border-color: #4c4c4c;
     --primary-color: #3584E4;
+    --accent-color: #698bad;
     --title-color: #ffffff;
     --text-color: #f0f0f0;
 
@@ -90,6 +91,12 @@ h2 {
     padding-left: 22px;
     padding-right: 22px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+    border-color: var(--accent-color);
 }
 
 .card-header {
@@ -125,7 +132,7 @@ h2 {
     padding: 8px 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .card-content-container button:hover {
