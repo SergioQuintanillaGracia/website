@@ -58,7 +58,7 @@ body header {
 body footer {
     background-color: var(--background-secondary);
     color: var(--title);
-    padding: 16px;
+    padding: 10px;
     text-align: center;
     border-top: 2px solid var(--border-color);
 }
