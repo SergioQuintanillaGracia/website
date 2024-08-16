@@ -61,7 +61,7 @@ h2 {
 }
 
 .card {
-    display: 0 0 auto;
+    flex: 0 0 auto;
     width: 400px;
     background-color: var(--background-secondary);
     border: 2px solid var(--border-color);
@@ -76,7 +76,6 @@ h2 {
 }
 
 .card-content {
-    /* display: none; */
     margin-top: 15px;
 }
 
@@ -95,4 +94,23 @@ h2 {
 
 .card-content a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 1040px) {
+    .card {
+        flex: 1 1 auto;
+        max-width: calc(50% - 60px);
+    }
+
+    .card-container {
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        width: auto;
+    }
 }
