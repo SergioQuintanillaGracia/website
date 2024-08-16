@@ -3,41 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Personal Website</title>
     <link rel="stylesheet" href="css/style.css">
+    <title>Card Dashboard</title>
 </head>
 <body>
     <header>
-        <h1>Work in progress...</h1>
+        <h1>Card Dashboard</h1>
     </header>
 
-    <div class="card-container">
-        <section class="card" id="university">
-            <div class="card-header">
-                <h2>University</h2>
-            </div>
-            <div class="card-description">
-                <p>Solved exams, practices, class exercises, and more.</p>
-            </div>
-            <div class="card-content">
-                <ul>
-                    <li><a href="https://github.com/SergioQuintanillaGracia/University">Github Repo</a></li>
-                </ul>
-            </div>
-        </section>
-    
-        <section class="card" id="projects">
-            <div class="card-header">
-                <h2>Projects</h2>
-            </div>
-            <div class="card-description">
-                <p>Personal projects.</p>
-            </div>
-            <div class="card-content">
-                <ul>
-                    <li><a href="https://github.com/SergioQuintanillaGracia/HideAndSeek-Releases/releases">Hide and Seek (GitHub)</a></li>
-                </ul>
-            </div>
-        </section>
+    <div class="main">
+        <div class="card-container">
+            <section class="card" id="university">
+                <div class="card-header">
+                    <h2>University</h2>
+                </div>
+                <div class="card-description">
+                    <p>Solved exams, practices, class exercises, and more.</p>
+                    <p>Test paragraph.</p>
+                </div>
+                <div class="card-content-container">
+                    <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/University'">GitHub Repo</button>
+                </div>
+            </section>
+        
+            <section class="card" id="projects">
+                <div class="card-header">
+                    <h2>Projects</h2>
+                </div>
+                <div class="card-description">
+                    <p>Personal projects.</p>
+                </div>
+                <div class="card-content-container">
+                    <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/HideAndSeek-Releases/releases'">Hide and Seek (GitHub)</button>
+                </div>
+            </section>
+        </div>
     </div>
+    
+    <footer>
+        <p>Built by <a href="https://github.com/SergioQuintanillaGracia">Sergio Quintanilla Graciá</a></p>
+    </footer>
 </body>
