@@ -46,6 +46,9 @@ body {
 
 .main {
     flex: 1;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body header {
@@ -137,6 +140,12 @@ h2 {
 
 .card-content-container button:hover {
     background-color: var(--button-hover-bg-color);
+}
+
+@media (min-width: 2000px) {
+    .main {
+        width: 2000px;
+    }
 }
 
 @media (max-width: 1040px) {
