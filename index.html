@@ -1,139 +1,190 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Card Dashboard</title>
-</head>
-<body>
-    <header>
-        <h1>Card Dashboard</h1>
-    </header>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Card Dashboard</title>
+    </head>
+    <body>
+        <header>
+            <h1>Card Dashboard</h1>
+        </header>
 
-    <div class="main">
-        <div class="card-container">
-            <section class="card" id="university">
-                <div class="card-header">
-                    <h2>📚 University Repo</h2>
-                </div>
-                <div class="card-description">
-                    <p>
-                        GitHub repository containing my solutions to exercises, exams, and laboratory 
-                        practices of programming subjects.
-                    </p>
-                    <p><b>Finished subjects:</b> IIP, PRG</p>
-                    <p><b>Subjects in progress:</b> None</p>
-                </div>
-                <div class="card-content-container">
-                    <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/university'">
-                        GitHub Repository
-                    </button>
-                </div>
-            </section>
+        <div class="main">
+            <div class="card-container">
+                <section class="card" id="university">
+                    <div class="card-header">
+                        <h2>📚 University Repo</h2>
+                    </div>
+                    <div class="card-description">
+                        <p>
+                            GitHub repository containing my solutions to exercises, exams, and laboratory 
+                            practices of programming subjects.
+                        </p>
+                        <p><b>Finished subjects:</b> IIP, PRG</p>
+                        <p><b>Subjects in progress:</b> None</p>
+                    </div>
+                    <div class="card-content-container">
+                        <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/university'">
+                            GitHub Repository
+                        </button>
+                    </div>
+                </section>
 
-            <section class="card" id="hide-and-seek">
-                <div class="card-header">
-                    <h2>📍 Hide and Seek</h2>
-                </div>
-                <div class="card-description">
-                    <p>
-                        Serverless android app for playing Hide and Seek. Track the shrinking game
-                        area and timers on your phone. Enjoy rich game customization options and
-                        easily share games with friends via QR codes.
-                    </p>
-                </div>
-                <div class="card-content-container">
-                    <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/hideandseek-releases/releases'">
-                        Download (GitHub)
-                    </button>
-                </div>
-            </section>
+                <section class="card" id="hide-and-seek">
+                    <div class="card-header">
+                        <h2>📍 Hide and Seek</h2>
+                    </div>
+                    <div class="card-description">
+                        <p>
+                            Serverless android app for playing Hide and Seek. Track the shrinking game
+                            area and timers on your phone. Enjoy rich game customization options and
+                            easily share games with friends via QR codes.
+                        </p>
+                    </div>
+                    <div class="card-content-container">
+                        <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/hideandseek-releases/releases'">
+                            Download (GitHub)
+                        </button>
+                    </div>
+                </section>
 
-            <section class="card" id="neural-network">
-                <div class="card-header">
-                    <h2>🧠 Neural Network</h2>
-                </div>
-                <div class="card-description">
-                    <p>
-                        Very simple neural network coded in C++ and Python. Only linear layers can
-                        be used, and it can only be trained through a genetic algorithm.
-                    </p>
-                    <p>
-                        I worked on this project before knowing how neural networks worked, just to
-                        test my ideas and learn C++ in the process.
-                    </p>
-                </div>
-                <div class="card-content-container">
-                    <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/neuralnetwork'">
-                        Github Repository
-                    </button>
-                </div>
-            </section>
+                <section class="card" id="learning-progress">
+                    <div class="card-header">
+                        <h2>⚙️ Project Learning</h2>
+                    </div>
+                    <div class="card-description">
+                        <p>
+                            Follow my progress as I learn the basics of different technologies that I
+                            will be using in a future project.
+                        </p>
+                    </div>
+                    <div class="card-content-container">
+                        <div class="progressbar">
+                            <p>JavaScript (1/20)</p>
+                            <div class="bar">
+                                <div class="progress" id="javascript-progress"></div>
+                            </div>
+                        </div>
+                        <div class="progressbar">
+                            <p>TypeScript (0/9)</p>
+                            <div class="bar">
+                                <div class="progress" id="typescript-progress"></div>
+                            </div>
+                        </div>
+                        <div class="progressbar">
+                            <p>Node.js (0/12)</p>
+                            <div class="bar">
+                                <div class="progress" id="nodejs-progress"></div>
+                            </div>
+                        </div>
+                        <div class="progressbar">
+                            <p>React (0/31)</p>
+                            <div class="bar">
+                                <div class="progress" id="react-progress"></div>
+                            </div>
+                        </div>
+                        <div class="progressbar">
+                            <p>React Nat. (0/66)</p>
+                            <div class="bar">
+                                <div class="progress" id="react-native-progress"></div>
+                            </div>
+                        </div>
+                        <div class="progressbar">
+                            <p>MongoDB (0/17)</p>
+                            <div class="bar">
+                                <div class="progress" id="mongodb-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-            <section class="card" id="linux">
-                <div class="card-header">
-                    <h2>🐧 Linux</h2>
-                </div>
-                <div class="card-description">
-                    <p>
-                        A concise post-install guide for OpenSUSE Tumbleweed (KDE), covering the
-                        installation of essential applications, games, university software, and
-                        a Windows virtual machine.
-                    </p>
-                    <p>
-                        'Solved problems' is a document containing problems I ran into across
-                        multiple Linux distros, and the solutions I found.
-                    </p>
-                </div>
-                <div class="card-content-container">
-                    <button onclick="window.location.href='https://docs.google.com/document/d/1LYpnfbIIZKs841AexcVNgf1sSfXpS0sB92W5di8UiKk/edit?usp=drive_link'">
-                        OpenSUSE Guide
-                    </button>
-                    <button onclick="window.location.href='https://docs.google.com/document/d/1L8-SZFEMu2YuF2MaRbvlbWK0z-t_YAMhQ01vWtEOfS4/edit?usp=sharing'">
-                        Solved Problems
-                    </button>
-                </div>
-            </section>
-            
-            <section class="card" id="small-projects">
-                <div class="card-header">
-                    <h2>📦 Small Projects</h2>
-                </div>
-                <div class="card-description">
-                    <p>
-                        Small personal projects I worked on to learn. Most are old, very small, unfinished, 
-                        and / or have very limited functionality.
-                    </p>
-                </div>
-                <div class="card-content-container">
-                    <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/diepio-recreation'">Diepio Recreation</button>
-                    <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/modpy'">ModPy</button>
-                    <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/graphicate'">Graphicate</button>
-                    <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/smath'">SMath</button>
-                    <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/periodic-table-practice'">Periodic Table</button>
-                </div>
-            </section>
+                <section class="card" id="neural-network">
+                    <div class="card-header">
+                        <h2>🧠 Neural Network</h2>
+                    </div>
+                    <div class="card-description">
+                        <p>
+                            Very simple neural network coded in C++ and Python. Only linear layers can
+                            be used, and it can only be trained through a genetic algorithm.
+                        </p>
+                        <p>
+                            I worked on this project before knowing how neural networks worked, just to
+                            test my ideas and learn C++ in the process.
+                        </p>
+                    </div>
+                    <div class="card-content-container">
+                        <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/neuralnetwork'">
+                            Github Repository
+                        </button>
+                    </div>
+                </section>
 
-            <section class="card" id="codeforces">
-                <div class="card-header">
-                    <h2>💻 Codeforces</h2>
-                </div>
-                <div class="card-description">
-                    <p>
-                        My solutions to Codeforces, AdventOfCode, and CPUPV bootcamp problems.
-                    </p>
-                </div>
-                <div class="card-content-container">
-                    <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/codeforces'">
-                        Github Repository
-                    </button>
-                </div>
-            </section>
+                <section class="card" id="linux">
+                    <div class="card-header">
+                        <h2>🐧 Linux</h2>
+                    </div>
+                    <div class="card-description">
+                        <p>
+                            A concise post-install guide for OpenSUSE Tumbleweed (KDE), covering the
+                            installation of essential applications, games, university software, and
+                            a Windows virtual machine.
+                        </p>
+                        <p>
+                            'Solved problems' is a document containing problems I ran into across
+                            multiple Linux distros, and the solutions I found.
+                        </p>
+                    </div>
+                    <div class="card-content-container">
+                        <button onclick="window.location.href='https://docs.google.com/document/d/1LYpnfbIIZKs841AexcVNgf1sSfXpS0sB92W5di8UiKk/edit?usp=drive_link'">
+                            OpenSUSE Guide
+                        </button>
+                        <button onclick="window.location.href='https://docs.google.com/document/d/1L8-SZFEMu2YuF2MaRbvlbWK0z-t_YAMhQ01vWtEOfS4/edit?usp=sharing'">
+                            Solved Problems
+                        </button>
+                    </div>
+                </section>
+                
+                <section class="card" id="small-projects">
+                    <div class="card-header">
+                        <h2>📦 Small Projects</h2>
+                    </div>
+                    <div class="card-description">
+                        <p>
+                            Small personal projects I worked on to learn. Most are old, very small, unfinished, 
+                            and / or have very limited functionality.
+                        </p>
+                    </div>
+                    <div class="card-content-container">
+                        <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/diepio-recreation'">Diepio Recreation</button>
+                        <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/modpy'">ModPy</button>
+                        <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/graphicate'">Graphicate</button>
+                        <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/smath'">SMath</button>
+                        <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/periodic-table-practice'">Periodic Table</button>
+                    </div>
+                </section>
+
+                <section class="card" id="codeforces">
+                    <div class="card-header">
+                        <h2>💻 Codeforces</h2>
+                    </div>
+                    <div class="card-description">
+                        <p>
+                            My solutions to Codeforces, AdventOfCode, and CPUPV bootcamp problems.
+                        </p>
+                    </div>
+                    <div class="card-content-container">
+                        <button onclick="window.location.href='https://github.com/SergioQuintanillaGracia/codeforces'">
+                            Github Repository
+                        </button>
+                    </div>
+                </section>
+            </div>
         </div>
-    </div>
-    
-    <footer>
-        <p>Built by <a href="https://github.com/SergioQuintanillaGracia">Sergio Quintanilla Graciá</a>, a Computer Science student at UPV</p>
-    </footer>
-</body>
+        
+        <footer>
+            <p>Built by <a href="https://github.com/SergioQuintanillaGracia">Sergio Quintanilla Graciá</a>, a Computer Science student at UPV</p>
+        </footer>
+    </body>
+</html>

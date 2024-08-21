@@ -2,7 +2,7 @@
     --background-primary: #232323;
     --background-secondary: #353535;
     --border-color: #4c4c4c;
-    --primary-color: #3584E4;
+    --primary-color: #3584E3;
     --accent-color: #698bad;
     --title-color: #ffffff;
     --text-color: #f0f0f0;
@@ -10,6 +10,9 @@
     --button-bg-color: var(--primary-color);
     --button-text-color: var(--text-color);
     --button-hover-bg-color: #4990E7;
+
+    --progressbar-bg: #535353;
+    --progressbar-fg: var(--primary-color);
 }
 
 @font-face {
@@ -126,7 +129,7 @@ h2 {
 }
 
 .card-content-container button {
-    flex: 1, 1, auto;
+    flex: 1 1 auto;
     background-color: var(--button-bg-color);
     color: var(--button-text-color);
     height: 40px;
@@ -140,6 +143,53 @@ h2 {
 
 .card-content-container button:hover {
     background-color: var(--button-hover-bg-color);
+}
+
+.progressbar p {
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.progressbar .bar {
+    width: 100%;
+    height: 8px;
+    background-color: var(--progressbar-bg);
+    border-radius: 4px;
+}
+
+.progressbar .bar .progress {
+    height: 100%;
+    background-color: var(--progressbar-fg);
+    border-radius: 4px;
+    transition: width 0.2s ease-in-out;
+}
+
+.card-content-container .progressbar {
+    flex: 1 1 170px;
+}
+
+.progressbar .bar .progress#javascript-progress {
+    width: 5%;
+}
+
+.progressbar .bar .progress#typescript-progress {
+    width: 0%;
+}
+
+.progressbar .bar .progress#nodejs-progress {
+    width: 0%;
+}
+
+.progressbar .bar .progress#react-progress {
+    width: 0%;
+}
+
+.progressbar .bar .progress#react-native-progress {
+    width: 0%;
+}
+
+.progressbar .bar .progress#mongodb-progress {
+    width: 0%;
 }
 
 @media (min-width: 2000px) {
