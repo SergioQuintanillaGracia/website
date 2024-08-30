@@ -169,7 +169,7 @@ h2 {
 }
 
 .progressbar .bar .progress#javascript-progress {
-    width: 5%;
+    width: 10%;
 }
 
 .progressbar .bar .progress#typescript-progress {
