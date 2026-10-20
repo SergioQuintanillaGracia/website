@@ -223,7 +223,7 @@ h2 {
     border-radius: 4px;
     white-space: nowrap;
     pointer-events: none;
-    transition: opacity 0.2s ease-in-out;
+    transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out;
     z-index: 10;
 }
 
